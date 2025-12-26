@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        section.active {
+            display: block;
+        }
+        
+        /* Profile Section */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid #3498db;
+        }
+        
+        .profile-header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .bio {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 1rem auto;
+        }
+        
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .hobby-tag {
+            background: #ecf0f1;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #3498db;
+        }
+        
+        /* Resume Section */
+        .resume-section {
+            margin-bottom: 2rem;
+        }
+        
+        .resume-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .resume-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .resume-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+        
+        .resume-item .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+      
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="#" data-section="profile">Profile</a>
+            <a href="#" data-section="resume">Resume</a>
+            <a href="#" data-section="gallery">Gallery</a>
+        </nav>
+   
+
+    <div class="container">
+        <!-- Profile Section -->
+        <section id="profile" class="active">
+            <div class="profile-header">
+                <img src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/462851081_1282130913229953_5040325971635026141_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=4-HnDJoEMcgQ7kNvwGoGuZL&_nc_oc=Adm_vDFJzw20O5Qis4WTR3jFmC6tO0VmdgY1LO6q5iQPgK8yc4kvdQLDJJzG7urTsmASOMocD49N7xTTwhWRXR3s&_nc_zt=23&_nc_ht=scontent.fbwa1-1.fna&_nc_gid=1gXKJCK1UUv_exMBcuE7OA&oh=00_Afl0WPyI2EtPvT8Z5LM7QSt7OZgjp7v6dTyHfu4-ABxHFw&oe=69530C45" alt="Profile" class="profile-pic">
+                <h1>Suyogya Chalise</h1>
+                <p class="bio">Welcome to my portfolio! I'm a student trying to learn web development with a love for creating beautiful and functional web experiences. Always eager to learn and grow in the tech industry.</p>
+                
+                <div class="hobbies">
+                    <span class="hobby-tag">🎨 Design</span>
+                    <span class="hobby-tag">💻 Coding</span>
+                    <span class="hobby-tag">📚 Reading</span>
+                    <span class="hobby-tag">🎮 Gaming</span>
+                    <span class="hobby-tag">🎵 Music</span>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1BqkSPeYgR/" target="_blank" title="facebook">f</a>
+                    <a href="mailto:chalisesuyogya7@gmail.com" title="Email">✉</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <div class="resume-section">
+                <h2>Experience</h2>
+                <div class="resume-item">
+                    <h3>learning web development</h3>
+                    <p class="date">2025-current</p>
+                    <p>learning web developnment from kathmandu college of technology
+                    </p>
+            </div>
+
+            <div class="resume-section">
+                <h2>Education</h2>
+                <div class="resume-item">
+                    <h3>Bachelor of Science in Computer Science and information technology</h3>
+                    <p class="date">2025</p>
+                    <p>Kathmandu College of Technology - Graduation Year 2029</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>Skills</h2>
+                <div class="hobbies">
+                    <span class="hobby-tag">HTML/CSS</span>
+                    <span class="hobby-tag">JavaScript</span>
+                    <span class="hobby-tag">React</span>
+                    <span class="hobby-tag">Python</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Photo Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/476403401_1363661355076908_5003151360376514465_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=109&ccb=1-7&_nc_sid=fe5ecc&_nc_ohc=PI5hQwlu0LoQ7kNvwFOmC80&_nc_oc=AdmnW7PShNr42CRtVfWwHJT_SHN1lVtcZJeOYOMiEf1ElrqYRKl2zni4CWnet0cjMvvA7i88O5s9z3D_QhsKbgJy&_nc_zt=23&_nc_ht=scontent.fbwa1-1.fna&_nc_gid=A9g3hT_eL2rAM64in3ib8A&oh=00_AfmZvbIrW-ZT_LPXyZkINTs3XLKA97ILuw3fteQpjBIeqw&oe=6952F4DE" alt="photo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/475814562_1357423562367354_3174845374466104205_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=109&ccb=1-7&_nc_sid=fe5ecc&_nc_ohc=0a3kdc3_6FIQ7kNvwE4wwDI&_nc_oc=AdnLI99Ay0Dkjh9RHwe1lorVcKdCXwHQZvduoDzsj5xQjIZhWiAJxKX1xExlHY_Xe9ztAuP0xY1-1mpMHjFYMHDh&_nc_zt=23&_nc_ht=scontent.fbwa1-1.fna&_nc_gid=waNpysFsWVpWHdIYXjMjNQ&oh=00_AfkxJzd-mDIVDlK47KfLYlm5KGyHz9MFVYl1VoNuqLy4yQ&oe=6952F6F9" alt="photo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/471190775_1331174988325545_3038111775343500329_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=_CVbD9LPR-sQ7kNvwH_xwcz&_nc_oc=AdlBqkPSlm0kXX-23w0rEH22c46DQ0zI3PFrJuEvstvg3YC_EcjT4GBmvPfruZDa77uERKyAgFSHklT3vn90ZrEN&_nc_zt=23&_nc_ht=scontent.fbwa1-1.fna&_nc_gid=jZULNqrWfka0EE_WXgBS5A&oh=00_Afn1l5cinsKMESuAfgJ2dHZpJgNRcfreeFC0w5B5rC8sCQ&oe=6952F095" alt="photo 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://scontent.fbwa1-1.fna.fbcdn.net/v/t39.30808-6/514334614_3166252780190977_521593101690355298_n.jpg?stp=c0.106.960.960a_dst-jpg_s206x206_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ad20&_nc_ohc=yCiROKWzklUQ7kNvwEi2qbw&_nc_oc=Adlz9cRkMx_QKXKfNxnLo7bVbpJ66PuBN2RbB3BtG1vjen877FpqhjL9iXRSfX6z56A07syqGu4EF7U1rBc1K5Pj&_nc_zt=23&_nc_ht=scontent.fbwa1-1.fna&_nc_gid=KUMXI8mGHun5onqfMSmRSA&oh=00_AfkkfRMT_kARz1QedMS_yRmFwP6Rtr3qFC-IgZXUXrTV4A&oe=6953004C" alt="photo 4">
+                </div>
+            </div>
+        </section>
+
+            </div>
+<script>
+        // Navigation functionality
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetSection = link.getAttribute('data-section');
+
+                sections.forEach(section => {
+                    if (section.id === targetSection) {
+                        section.classList.add('active');
+                    } else {
+                        section.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+       
+    
+</body>
+</html>
