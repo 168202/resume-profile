@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table & Media</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+        text-align: left;
+        border-radius: 10px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Grades</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>shrijesh</td>
+          <td>Math</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>gai</td>
+          <td>Science</td>
+          <td>B+</td>
+        </tr>
+        <tr>
+          <td>suyogya</td>
+          <td>History</td>
+          <td>A-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <h2>Table with Colspan Example</h2>
+    <p>
+      HTML Table - Colspan To make a cell span over multiple columns, use the
+      colspan attribute:
+    </p>
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>ram</td>
+        <td>nepali</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>hari</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+    <h2>Table with Rowspan Example</h2>
+    <p>
+      HTML Table - Rowspan To make a cell span over multiple rows, use the
+      rowspan attribute:
+    </p>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+
+    <hr />
+    <br />
+    <h2>HTML Unordered Lists</h2>
+    <ul style="list-style-type: square">
+      <li>HTML Multimedia Elements</li>
+      <li>Images</li>
+      <li>Audio</li>
+      <li>Video</li>
+      <li>Embedded Content (like YouTube videos, maps, etc.)</li>
+    </ul>
+
+    <h2>HTML Ordered Lists</h2>
+    <ol type="I">
+      <li>HTML Forms</li>
+      <li>Input Types</li>
+      <li>Form Elements</li>
+      <li>Form Attributes</li>
+    </ol>
+  </body>
+</html>
